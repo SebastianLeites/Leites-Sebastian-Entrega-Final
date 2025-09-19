@@ -293,7 +293,7 @@
 .bloque h2 {
   font-size: 28px;
   margin-bottom: 15px;
-  color: #005f73;
+  color: #254260;
 }
 
 .bloque p {
@@ -309,11 +309,15 @@
 
 .miembro {
   flex: 1 1 250px;
-  background-color: #fff;
+  background-color: #f6f2ea;
   padding: 20px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.miembro h3{
+  color: #254260;
 }
 
 .miembro:hover{
@@ -334,7 +338,9 @@
   color: #0a9396;
 }
 
+
 .miformulario{
+
   background-color: rgb(244, 220, 188);
 
 }
@@ -349,4 +355,10 @@
   border-color: rgb(239, 189, 71);
   box-shadow: none;
   outline: none;
+}
+
+.miembro img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
