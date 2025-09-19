@@ -338,6 +338,7 @@
   color: #0a9396;
 }
 
+/* INSCRIPCIONES */
 
 .miformulario{
 
@@ -361,4 +362,95 @@
   width: 100px;
   height: 100px;
   border-radius: 50px;
+}
+
+/* CATEGORIAS */
+
+.seccion-categorias {
+  margin: 20px;
+  padding: 50px 20px;
+  background-color: #f1e3e3c9;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.titulo-categorias {
+  font-size: 30px;
+  color:#0a9396;
+  margin-bottom: 30px;
+}
+
+.contenedor-categorias {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.categoria {
+  background-color: #eee7da;
+  border-radius: 15px;
+  max-width: 300px;
+  padding: 20px;
+  box-shadow: 0 10px 10px rgba(238, 145, 59, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.categoria:hover {
+  transform: translateY(-5px);
+}
+
+.imagen-categoria {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.nombre-categoria {
+  font-size: 20px;
+  color:#0a9396;
+  margin-bottom: 10px;
+}
+
+.descripcion-categoria {
+  font-size: 16px;
+  color: #0b1011;;
+  line-height: 1.5;
+}
+
+/* GALERIA */
+.galeria {
+  padding: 50px 20px;
+  background-color: #f1e3e3c9;;
+  text-align: center;
+}
+
+.titulo-galeria {
+  font-size: 30px;
+  color:#0a9396;
+  margin-bottom: 30px;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.foto-galeria {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.foto-galeria:hover {
+  transform: scale(1.05);
 }
