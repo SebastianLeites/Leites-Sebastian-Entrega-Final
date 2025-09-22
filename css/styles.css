@@ -110,6 +110,7 @@
 .fotoinicio img{ 
     width: 90%;
     height: 90%;
+    border-radius: 15px;
     
 }
  
@@ -170,6 +171,7 @@
 .gridseccion img{
     width: 150px;
     height: 150px;
+    border-radius: 15px;
 }
 
 
@@ -318,6 +320,8 @@
 
 .miembro h3{
   color: #254260;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .miembro:hover{
@@ -332,11 +336,7 @@
   margin-bottom: 15px;
 }
 
-.miembro h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #0a9396;
-}
+
 
 /* INSCRIPCIONES */
 
@@ -376,7 +376,7 @@
 
 .titulo-categorias {
   font-size: 30px;
-  color:#0a9396;
+  color:#254260;
   margin-bottom: 30px;
 }
 
@@ -411,7 +411,7 @@
 
 .nombre-categoria {
   font-size: 20px;
-  color:#0a9396;
+  color:#254260;
   margin-bottom: 10px;
 }
 
@@ -424,13 +424,15 @@
 /* GALERIA */
 .galeria {
   padding: 50px 20px;
+  margin: 20px;
   background-color: #f1e3e3c9;;
   text-align: center;
+  border-radius: 15px;
 }
 
 .titulo-galeria {
   font-size: 30px;
-  color:#0a9396;
+  color:#254260;
   margin-bottom: 30px;
 }
 
