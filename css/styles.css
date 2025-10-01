@@ -173,17 +173,17 @@
 
 
 @media (max-width: 1000px) {
-  .navbar-collapse.show .menuitem {
+  .navbar-collapse .menuitem {
     background-color: #caf6ec;  
     color: #009a9d;                
     padding: 10px 10px;
     border-bottom: 1px solid #ccc;
     border-radius: 15px;
     margin-bottom: 10px;
-    transition: all 0.3s ease;
+  
   }
 
-  .navbar-collapse.show .menuitem:hover {
+  .navbar-collapse .menuitem:hover {
     background-color: #e0e0e0;    
     color: #0056b3;                
   }
