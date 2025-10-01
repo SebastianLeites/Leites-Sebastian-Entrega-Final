@@ -72,7 +72,7 @@
  }
  
 
- button{
+ a.button{
     width: 100px;
     border: none;
     padding: 5px;
@@ -82,6 +82,10 @@
     border-radius: 15px;
     margin: 25px;
     font-family: arial;
+    text-decoration: none;
+    color: #0b1011;
+  
+    
   }
 
   .button:hover{
@@ -134,10 +138,14 @@
  }
 
 
- .button2{
+ a.button2{
     margin: 15px auto;
     display: block;
-    max-width: 90%;
+    max-width: 50%;
+    background-color: bisque;
+    color: #0b1011;
+    border-radius: 15px;
+    text-decoration: none;
 
     
  }
@@ -145,7 +153,19 @@
   background-color:  rgb(243, 210, 154);
  }
 
+ .button2{
+    margin: 15px auto;
+    display: block;
+    max-width: 70%;
+    background-color: bisque;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #0b1011;
+    border: none;
+  
+ }
  
+
 .piedepagina{
     color: #f1f3f6;
     font-size:25px;
@@ -214,11 +234,8 @@
     height: auto;
   }
 
-   .piedepagina{
-   flex-direction: column-reverse;
 }
 
-}
 
 @media(max-width: 450px){
   .gridcontenedor {
