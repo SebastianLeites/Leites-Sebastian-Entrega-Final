@@ -5,26 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="./pages/">
-    <link rel="stylesheet" href="../img/">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>Nosotros</title>
 </head>
 <body class="fondo">
- <header class="header">
-    <div class="logo"><img src="../img/Captura de pantalla 2025-09-03 001858.png" alt=""></div>
-    <button class="menu-toggle">&#9776;</button>
-    <nav class="menu">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li> 
-            <li><a href="#">Nosotros</a></li> 
-            <li><a href="./categorias.html">Categorias</a></li>
-            <li> <a href="./insccripciones.html">Inscripciones</a></li>
-            <li> <a href="./galeria.html">Galeria</a></li>
-        </ul>   
-    </nav>
+<nav class="navbar navbar-expand-lg">
+ <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="../img/Captura de pantalla 2025-09-03 001858.png" alt="Logo de la institución" class="d-inline-block align-text-top-" height="80">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-</header>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active menuitem" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem" href="./categorias.html">Categorias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem" href="./insccripciones.html">Inscripciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem" href="./galeria.html">Geleria</a>
+        </li>
+      </ul>
+    </div>
+   </div>
+</nav>
+
 <section class="nosotros">
   <div class="contenedor-nosotros">
     <div class="bloque">
@@ -71,14 +87,25 @@
   </div>
 </section>
 
-
 <footer> 
-   <ul class="piedepagina">
-        <li><a target="_blank" href="https://wa.me/3754532272">WhatsApp</a></li>
-        <li><a target="_blank" href="https://www.instagram.com/pgigantesef?igsh=MTdmOWd6d2FwbXRneg%3D%3D&utm_source=qr">Instagram</a></li>
-        <li> <a target="_blank" href="mailto:Sebastianleites966@gmail.com">Correo Electronio</a></li>
-        <li><a target="_blank" href="https://maps.apple.com/place?coordinate=-27.617155,-55.331514&name=Ubicaci%C3%B3n%20marcada&map=explore">Ubicacion</a></li>
-    </ul>
+    <ul class="piedepagina">
+        <li>
+          <a target="_blank" href="https://wa.me/3754532272">
+            <i class="fab fa-whatsapp"></i></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.instagram.com/pgigantesef?igsh=MTdmOWd6d2FwbXRneg%3D%3D&utm_source=qr">
+            <i class="fab fa-instagram"></i></a>
+        </li>
+        <li> 
+          <a target="_blank" href="mailto:Sebastianleites966@gmail.com">
+          <i class="fas fa-envelope"></i></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://maps.apple.com/place?coordinate=-27.617155,-55.331514&name=Ubicaci%C3%B3n%20marcada&map=explore">
+            <i class="fas fa-map-marker-alt"></i></a>
+        </li>
+  </ul>
     <p class="cierre"> 2025 Pequeños Gigantes</p>
 
 </footer>
@@ -87,14 +114,6 @@
 
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-<script>
-  const toggle = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.menu');
-
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
-</script> 
+     
 </body>
 </html>

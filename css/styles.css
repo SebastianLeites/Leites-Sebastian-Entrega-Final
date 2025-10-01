@@ -9,6 +9,10 @@
   margin-right: 10px;
   font-size: 18px;
   border-radius: 15px;
+  font-family: Arial;
+}
+.menuitem:hover{
+  background-color:  rgb(221, 206, 182);
 }
 
 .logo{
@@ -31,7 +35,7 @@
 .contenedor{
     display: flex;
     margin: 20px;
-    
+    font-family: Arial;
     justify-content: space-around;
     align-items: center;
     height: 600px;
@@ -77,6 +81,7 @@
     cursor: pointer;
     border-radius: 15px;
     margin: 25px;
+    font-family: arial;
   }
 
   .button:hover{
@@ -92,8 +97,8 @@
     grid-template-columns:1fr 1fr 1fr 1fr;
     gap: 20px;
     align-items: center;
-  
-    
+    font-family: arial;
+   
  }
   
  .gridseccion{
@@ -108,7 +113,7 @@
     text-align: center;
  }
  .gridseccion:hover{
-  background-color: rgb(220, 208, 187);
+  background-color:  rgb(221, 206, 182);
  }
 .gridseccion h3{
     font-size: 30px;
