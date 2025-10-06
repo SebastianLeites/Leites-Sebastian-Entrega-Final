@@ -23,6 +23,7 @@
 }
 
 // Mixin para tarjetas reutilizables (categorías, secciones, equipo)
+
 @mixin tarjeta-estilo(
   $bg-color: $color-fondo-seccion,
   $radius: 15px,

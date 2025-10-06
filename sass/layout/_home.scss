@@ -2,6 +2,8 @@
 @use"../utilities/mixin" as *; 
 
 /*seccion INICIO*/
+
+
 .menuitem {
   background-color: $color-principal;
   margin-right: 15px;
@@ -17,6 +19,9 @@
 .logo {
   border-radius: $border-radius;
   margin: 15px;
+  width: 100px;  
+  height: auto;       
+  max-width: 100%;
 }
 
 .fondo {
@@ -37,7 +42,7 @@
 
   margin: 20px;
   font-family: $font-principal;
-  height: 600px;
+  height: auto;
   background-color: $color-seccion-fondo;
   transition: $transition-default;
   border-radius: $border-radius;
@@ -64,23 +69,31 @@
 }
 
 .fotoinicio {
-  width: 500px;
-  height: 400px;
-  margin: 10px;
+  width: 100%;
+  max-width: 500px; // límite superior del contenedor
+  margin: 10px auto;
   display: flex;
-  align-items: center;}
+  align-items: center;
+  justify-content: center;
 
-  .fotoinicio img {
-  @include imagen-redonda(
-    $width: 90%,
-    $height: 90%,
-    $radius: $border-radius );
-
-  @media (max-width: 700px) {
-    width: 90%;
+  img {
+    @include imagen-redonda(
+      $width: 100%,
+      $height: auto,
+      $radius: $border-radius
+    );
+    display: block;
+    max-width: 100%;
     height: auto;
   }
+    @media (max-width: 700px) {
+    width: 100%;
+    height: auto;
+  }
+  
 }
+
+
 
 //BOTONES//
 a.button {
