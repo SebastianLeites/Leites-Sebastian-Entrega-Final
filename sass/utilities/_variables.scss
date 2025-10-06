@@ -1,0 +1,38 @@
+
+$color-principal: antiquewhite;
+$color-principal-hover: rgb(221, 206, 182);
+$color-seccion-fondo: #ead3d376;
+$color-button: bisque;
+$color-button-hover: rgb(220, 208, 187);
+$color-secundario-hover: rgb(243, 210, 154);
+$color-texto: #0b1011;
+$color-footer-texto: #f1f3f6;
+$color-footer-hover: rgb(243, 208, 163);
+$color-nosotros-fondo: #f1e3e3c9;
+$color-nosotros-texto: #333;
+$color-nosotros-titulo: #254260;
+$color-equipo: #f6f2ea;
+$color-hover-miembro: rgba(218, 215, 215, 0.851);
+$color-categoria-fondo: #eee7da;
+$color-shadow-categoria: rgba(238, 145, 59, 0.1);
+$color-input: rgba(241, 214, 172, 0.826);
+$color-input-focus: rgb(239, 189, 71);
+
+// Tipografías
+$font-principal: Arial;
+$font-size-base: 18px;
+$font-size-titulo: 30px;
+$font-size-subtitulo: 25px;
+$font-size-h2: 28px;
+$font-size-h3: 20px;
+$font-size-p: 16px;
+$font-size-link: 20px;
+
+// Bordes y radios
+$border-radius: 15px;
+$border: 2px solid $color-input;
+
+// Otros
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$box-shadow-img: 0 4px 12px rgba(0,0,0,0.1);
+$transition-default: cubic-bezier(0.075, 0.82, 0.165, 1);

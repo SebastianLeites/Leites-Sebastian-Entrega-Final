@@ -1,0 +1,39 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+/* Seccion INSCRIPCIONES*/
+
+.miformulario {
+  background-color: rgb(244, 220, 188);
+}
+
+.fondoformulario {
+  @include tarjeta-estilo(
+    $bg-color: rgb(247, 238, 227),
+    $radius: 10px,
+    $padding: 20px,
+    $text-align: left
+  );
+}
+
+.imput {
+  @include input-estilo(
+    $border-color: rgba(241, 214, 172, 0.826),
+    $focus-color: rgb(239, 189, 71)
+  );
+}
+
+.button2{
+    margin: 15px auto;
+    display: block;
+    max-width: 70%;
+    background-color: bisque;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #0b1011;
+    border: none;
+    
+    &:hover {
+    background-color: $color-secundario-hover;
+  }
+}

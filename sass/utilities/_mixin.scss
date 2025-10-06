@@ -1,0 +1,103 @@
+
+
+// Mixin para estilos de botones
+@mixin boton-estilo(
+  $bg-color: $color-boton,
+  $text-color: $color-texto,
+  $radius: 15px,
+  $width: auto,
+  $margin: 15px auto,
+  $padding: 5px
+) {
+  width: $width;
+  padding: $padding;
+  margin: $margin;
+  border: none;
+  background-color: $bg-color;
+  color: $text-color;
+  border-radius: $radius;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+// Mixin para tarjetas reutilizables (categorías, secciones, equipo)
+@mixin tarjeta-estilo(
+  $bg-color: $color-fondo-seccion,
+  $radius: 15px,
+  $padding: 15px,
+  $text-align: center,
+  $box-shadow: none
+) {
+  background-color: $bg-color;
+  border-radius: $radius;
+  padding: $padding;
+  text-align: $text-align;
+  box-shadow: $box-shadow;
+}
+
+// Mixin para contenedores flexibles
+@mixin contenedor-flex(
+  $justify: center,
+  $align: center,
+  $gap: 0,
+  $direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+// Mixin para contenedores grid
+@mixin contenedor-grid(
+  $columns: 1fr 1fr 1fr 1fr,
+  $gap: 20px
+) {
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;
+}
+
+// Mixin para imágenes con borde redondeado
+@mixin imagen-redonda(
+  $width: 100%,
+  $height: auto,
+  $radius: 15px
+) {
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+  object-fit: cover;
+}
+
+// Mixin para estilos de inputs
+@mixin input-estilo(
+  $border-color: $color-input-border,
+  $focus-color: $color-input-focus
+) {
+  border: 2px solid $border-color;
+  &:focus {
+    border-color: $focus-color;
+    box-shadow: none;
+    outline: none;
+  }
+}
+@mixin imagen-galeria(
+  $width: 100%,
+  $height: 250px,
+  $radius: 15px,
+  $shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+  $transition: transform 0.3s ease
+) {
+  width: $width;
+  height: $height;
+  object-fit: cover;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  transition: $transition;
+}

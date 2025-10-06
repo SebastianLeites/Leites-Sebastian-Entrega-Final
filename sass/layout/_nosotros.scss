@@ -1,0 +1,77 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *; 
+
+.nosotros {
+  margin: 20px;
+  color: #333;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  @include tarjeta-estilo(
+    $bg-color: #f1e3e3c9,
+    $radius: 15px,
+    $padding: 50px 20px,
+    $text-align: left
+  );
+}
+
+.contenedor-nosotros {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bloque {
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #254260;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+.equipo {
+  @include contenedor-flex(
+    $justify: flex-start,
+    $align: stretch,
+    $gap: 30px,
+    $wrap: wrap
+  );
+}
+
+.miembro {
+  flex: 1 1 250px;
+
+  @include tarjeta-estilo(
+    $bg-color: #f6f2ea,
+    $radius: 15px,
+    $padding: 20px,
+    $text-align: center,
+    $box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+  );
+
+  &:hover {
+    background-color: rgba(218, 215, 215, 0.851);
+  }
+
+  h3 {
+    color: #254260;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    @include imagen-redonda(
+      $width: 200px,
+      $height: 200px,
+      $radius: 50%
+    );
+
+    max-width: 200px;
+    margin-bottom: 15px;
+  }
+}

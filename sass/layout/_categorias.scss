@@ -1,0 +1,70 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+/* seccion CATEGORIA */
+
+.seccion-categorias {
+  margin: 20px;
+  padding: 50px 20px;
+  text-align: center;
+
+  @include tarjeta-estilo(
+    $bg-color: #f1e3e3c9,
+    $radius: 15px,
+    $padding: 50px 20px,
+    $text-align: center
+  );
+}
+
+.titulo-categorias {
+  font-size: 30px;
+  color: #254260;
+  margin-bottom: 30px;
+}
+
+.contenedor-categorias {
+  @include contenedor-flex(
+    $justify: center,
+    $gap: 30px,
+    $wrap: wrap
+  );
+}
+
+.categoria {
+  max-width: 300px;
+  transition: transform 0.3s ease;
+
+  @include tarjeta-estilo(
+    $bg-color: #eee7da,
+    $radius: 15px,
+    $padding: 20px,
+    $text-align: center,
+    $box-shadow: 0 10px 10px rgba(238, 145, 59, 0.1)
+  );
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.imagen-categoria {
+  @include imagen-redonda(
+    $width: 100%,
+    $height: 200px,
+    $radius: 12px
+  );
+
+  margin-bottom: 15px;
+}
+
+.nombre-categoria {
+  font-size: 20px;
+  color: #254260;
+  margin-bottom: 10px;
+}
+
+.descripcion-categoria {
+  font-size: 16px;
+  color: #0b1011;
+  line-height: 1.5;
+}

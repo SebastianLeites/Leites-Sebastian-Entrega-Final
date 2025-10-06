@@ -1,0 +1,39 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+/* Seccion GALERIA*/
+
+.galeria {
+  margin: 20px;
+
+  @include tarjeta-estilo(
+    $bg-color: #f1e3e3c9,
+    $radius: 15px,
+    $padding: 50px 20px,
+    $text-align: center
+  );
+}
+
+.titulo-galeria {
+  font-size: 30px;
+  color: #254260;
+  margin-bottom: 30px;
+}
+
+.galeria-grid {
+  @include contenedor-grid(
+    $columns: repeat(auto-fit, minmax(250px, 1fr)),
+    $gap: 20px
+  );
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.foto-galeria {
+  @include imagen-galeria();
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

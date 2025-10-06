@@ -1,0 +1,219 @@
+@use"../utilities/variables" as *;
+@use"../utilities/mixin" as *; 
+
+/*seccion INICIO*/
+.menuitem {
+  background-color: $color-principal;
+  margin-right: 15px;
+  font-size: $font-size-base;
+  border-radius: $border-radius;
+  font-family: $font-principal;
+
+  &:hover {
+    background-color: $color-principal-hover;
+  }
+}
+
+.logo {
+  border-radius: $border-radius;
+  margin: 15px;
+}
+
+.fondo {
+  margin: 0;
+  max-width: 100%;
+  background-image: url('../img/fondo2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 600px;
+}
+.contenedor {
+  @include contenedor-flex(
+    $justify: space-around,
+    $align: center
+  );
+
+  margin: 20px;
+  font-family: $font-principal;
+  height: 600px;
+  background-color: $color-seccion-fondo;
+  transition: $transition-default;
+  border-radius: $border-radius;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.inicio {
+  width: 500px;
+  height: auto;
+  margin: 10px;
+  justify-content: center;
+
+  p {
+    text-align: justify;
+  }
+
+  @media (max-width: 700px) {
+    width: 90%;
+  }
+}
+
+.fotoinicio {
+  width: 500px;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  align-items: center;}
+
+  .fotoinicio img {
+  @include imagen-redonda(
+    $width: 90%,
+    $height: 90%,
+    $radius: $border-radius );
+
+  @media (max-width: 700px) {
+    width: 90%;
+    height: auto;
+  }
+}
+
+//BOTONES//
+a.button {
+
+  @include boton-estilo(
+    $bg-color: $color-button,
+    $text-color: $color-texto,
+    $radius: $border-radius,
+    $width: 100px,
+    $margin: 25px,
+    $padding: 5px );
+
+  &:hover {
+    background-color: $color-button-hover;
+  }
+}
+
+a.button2 {
+  margin: 15px auto;
+  display: block;
+  max-width: 70%;
+  background-color: $color-button;
+  color: $color-texto;
+  border-radius: $border-radius;
+  text-decoration: none;
+  border: none;
+
+  &:hover {
+    background-color: $color-secundario-hover;
+  }
+}
+
+// ======= SECCIÓN GRID =======
+
+
+ .gridcontenedor {
+  @include contenedor-grid(
+    $columns: repeat(4, 1fr),
+    $gap: 20px);
+  background-color: $color-seccion-fondo;
+  border-radius: $border-radius;
+  align-items: center;
+  font-family: $font-principal;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gridseccion {
+  width: 100%;
+  height: auto;
+  overflow-wrap: break-word;
+
+  @include tarjeta-estilo(
+    $bg-color: $color-seccion-fondo,
+    $radius: $border-radius,
+    $padding: 15px,
+    $text-align: center);
+
+  &:hover {
+    background-color: $color-principal-hover;
+  }
+}
+
+  h3 {
+    font-size: $font-size-titulo;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  p a {
+    width: 100%;
+    font-size: $font-size-link;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  img {
+    width: 70%;
+    height: 150px;
+    border-radius: $border-radius;
+  }
+
+
+//FOOTER//
+.piedepagina {
+  color: $color-footer-texto;
+  font-size: $font-size-subtitulo;
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+    color: rgb(249, 249, 248);
+
+    &:hover {
+      color: $color-footer-hover;
+    }
+  }
+}
+
+.cierre {
+  text-align: center;
+  color: $color-footer-texto;
+  font-size: $font-size-subtitulo;
+}
+
+//NAVBAR RESPONSIVE 
+@media (max-width: 1000px) {
+  .navbar-collapse .menuitem {
+    background-color: #caf6ec;
+    color: #009a9d;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-radius: $border-radius;
+    margin-bottom: 10px;
+
+    &:hover {
+      background-color: #e0e0e0;
+      color: #0056b3;
+    }
+  }
+}
