@@ -63,6 +63,22 @@
   grid-template-columns: $columns;
   gap: $gap;
 }
+// Mixin para crear un grid categoria responsive
+@mixin grid-responsive(
+  $columns-mobile: 1fr,
+  $columns-desktop: 1fr 1fr 1fr,
+  $gap: 30px,
+  $breakpoint: 900px
+) {
+  display: grid;
+  grid-template-columns: $columns-mobile;
+  gap: $gap;
+  justify-items: center;
+
+  @media (min-width: $breakpoint) {
+    grid-template-columns: $columns-desktop;
+  }
+}
 
 // Mixin para imágenes con borde redondeado
 @mixin imagen-redonda(

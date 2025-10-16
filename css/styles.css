@@ -9,16 +9,6 @@
 .menuitem:hover {
   background-color: rgb(221, 206, 182);
 }
-.navbar-toggler {
-  background-color: #ccc;
-  border: 2px solid #525151;
-  border-radius: 8px;
-  padding: 6px 10px;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
 
 .logo {
   border-radius: 15px;
@@ -134,7 +124,6 @@ a.button2:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin: 20px;
   background-color: rgba(234, 211, 211, 0.462745098);
   border-radius: 15px;
   align-items: center;
@@ -310,17 +299,17 @@ img {
 
 .contenedor-categorias {
   display: grid;
-  gap: 30px;
   grid-template-columns: 1fr;
+  gap: 30px;
   justify-items: center;
-  padding: 0 10px;
 }
-
-
 @media (min-width: 900px) {
   .contenedor-categorias {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+.contenedor-categorias {
+  padding: 0 10px;
 }
 
 .categoria {

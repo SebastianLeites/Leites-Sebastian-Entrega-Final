@@ -23,11 +23,13 @@
 }
 
 .contenedor-categorias {
-  @include contenedor-flex(
-    $justify: center,
+  @include grid-responsive(
+    $columns-mobile: 1fr,
+    $columns-desktop: 1fr 1fr 1fr, // <-- tres columnas
     $gap: 30px,
-    $wrap: wrap
+    $breakpoint: 900px
   );
+  padding: 0 10px;
 }
 
 .categoria {
