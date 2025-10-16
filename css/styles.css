@@ -309,12 +309,18 @@ img {
 }
 
 .contenedor-categorias {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
   gap: 30px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 0 10px;
+}
+
+
+@media (min-width: 900px) {
+  .contenedor-categorias {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .categoria {
