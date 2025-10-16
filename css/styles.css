@@ -345,6 +345,11 @@ img {
   line-height: 1.5;
 }
 
+@media (max-width: 899px) {
+  section.seccion-categorias .contenedor-categorias {
+    grid-template-columns: 1fr;
+  }
+}
 /* Seccion INSCRIPCIONES*/
 .miformulario {
   background-color: rgb(244, 220, 188);
